@@ -12,3 +12,12 @@ function cerrar() {
 }
 $abrir.addEventListener("click",abrir)
 $cerrar.addEventListener("click",cerrar)
+
+window.addEventListener('scroll', () => {
+    const button = document.querySelector('.login-button');
+    if (window.scrollY >= document.body.scrollHeight - window.innerHeight) {
+      button.style.opacity = 1;
+    } else {
+      button.style.opacity = 0;
+    }
+  });

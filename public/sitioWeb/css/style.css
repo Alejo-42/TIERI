@@ -242,6 +242,7 @@ main{
             justify-content: center;
             width: 100%;
             img{
+                background-color: white;
                 margin: 2vh;
                 width: 80%;
                 transition: all 0.8s;
@@ -417,20 +418,27 @@ footer{
                 justify-content: center;
             }
             .login{
-                bottom: 20px;
-                right: 20px;
-                width: 50px;
-                height: 50px;
+                bottom: 3vh;
+                right: 3vh;
                 position: fixed;
                 display: flex;
                 a{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
                     color: blue;
+                    border: solid 3px gray;
                     background-color: white;
-                    transition: all 0.8s;
+                    transition: all 0.5s;
+                    transition: opacity 0.5s ease-in-out;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
                     i{
                         scale: 2;
                         padding: 1vh;
-                        margin: 1vh;
+                        margin: 0;
                     }
                 }
                 a:hover{

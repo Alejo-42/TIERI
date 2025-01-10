@@ -79,7 +79,7 @@
                 <div class="frame">
                     <iframe src="{{$empresa->georeferencia}}" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="login">
-                            <a target="__blank" title="Login" href="/login"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                            <a class="login-button" target="__blank" title="Login" href="/login"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
                         </div>
                     </div>
                 </div>
