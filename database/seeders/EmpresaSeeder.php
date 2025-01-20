@@ -15,14 +15,14 @@ class EmpresaSeeder extends Seeder
     public function run()
     {
         empresa::create([
-            'correo1' =>'correo@atlast.ec',
-            'correo2' =>'correo@atlast.ec',
-            'numero1'=>'0991746109',
-            'numero2'=>'0991746100',
-            'imagen_fondo'=> 'imagen_fondo.png',
-            'logo'=>'logo.png',
-            'direccion'=>'Av.Jose Sanchez y Mariscal Sucre',
-            'georeferencia'=>'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3989.8073975324373!2d-78.49930590674215!3d-0.1340690009127936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1735457876912!5m2!1ses!2sec'
+            'correo1' =>'tieri.electrico@gmail.com',
+            'correo2' =>'cafivi.pr@hotmail.com',
+            'numero1'=>'0997030418',
+            'numero2'=>'0999552099',
+            'imagen_fondo'=> '20250109151658.jpg',
+            'logo'=>'20250109151243.jpeg',
+            'direccion'=>'Avenida Humberto Albornoz Oe9-112 y Antonio Herrera, Quito',
+            'georeferencia'=>'https://www.google.com/maps/embed?pb=!3m2!1ses!2sec!4v1736190144110!5m2!1ses!2sec!6m8!1m7!1sn2lbpvv0q0LxI11sosil9A!2m2!1d-0.1896356495357802!2d-78.51064984656831!3f344.597202581761!4f10.932724847233942!5f0.7820865974627469'
         ]);
     }
 }

@@ -16,9 +16,9 @@
         <div class="icono">
             <img src="{{asset('imagen/'.$empresa->logo)}}" alt="Icono">
         </div>
-        <button id="BtnAbrir"><i class="fa-solid fa-caret-down"></i></button>
+        <button id="BtnAbrir"><i class="fa-solid fa-chevron-down"></i></button>
         <ul class="inicio">
-          <button class="BtnCerrar"><i class="fa-solid fa-xmark"></i></button>
+          <button class="BtnCerrar"><i class="fa-solid fa-chevron-up"></i></button>
             <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
             <li><a href="#servicios"><i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
             <li><a href="#sobre-n"><i class="fa-solid fa-users-gear"></i> Sobre nosotros</a></li>
@@ -78,9 +78,6 @@
                 </div>
                 <div class="frame">
                     <iframe src="{{$empresa->georeferencia}}" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div class="login">
-                            <a class="login-button" target="__blank" title="Login" href="/login"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
-                        </div>
                     </div>
                 </div>
         </div>

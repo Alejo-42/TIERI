@@ -18,8 +18,10 @@ class DatabaseSeeder extends Seeder
         $this->call(EmpresaSeeder::class);
         $this->call(MisVisSeeder::class);
         $this->call(InicioSeeder::class);
-        $this->call(CardSeeder::class);
         $this->call(UserSeeder::class);
         $this->call(SeoSeeder::class);
+        $this->call(ServiceSeeder::class);
+        $this->call(IluminacionSeeder::class);
+        $this->call(HerramientasSeeder::class);
     }
 }

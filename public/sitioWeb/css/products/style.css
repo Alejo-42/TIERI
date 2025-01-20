@@ -1,0 +1,154 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .derechos{
+        flex-wrap: wrap;
+        margin: 0;
+        position: static;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: small;
+        padding: 1px;
+    }
+}
+.productos{
+    h3{
+        text-align: center;
+        font-size: 6vw;
+        margin: 1vw;
+        padding: 1vw;
+    }
+    .busqueda{
+        display: flex;
+        form{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            input{
+                width: 30%;
+                font-size: 2vw;
+            }
+            button{
+                font-size: 2vw;
+                background-color: black;
+                color: white;
+                border: solid 3px gray;
+                padding: 1vh;
+            }
+        }
+    }
+    .productos-categorias{
+        display: flex;
+        flex-direction: column;
+        .producto-iluminacion,.producto-herramientas{
+            h2{
+                text-align: center;
+                font-size: 5vw;
+            }
+            .producto{
+                display: flex;
+                margin: 1vw;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .card{
+                    width: 30%;
+                    margin: 1vw;
+                    border: solid 5px black;
+                    transition: all 0.8s;
+                    .card-image{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 90%;
+                        padding: 1vw;
+                        img{
+                            width: 50%;
+                        }
+                    }
+                    .card-body{
+                        text-align: center;
+                        .card-title{
+                            padding: 1vh;
+                            font-size: 2.4vw;
+                        }
+                        .card-text{
+                            padding: 1vh;
+                            font-size: 2vw;
+                        }
+                        .card-price{
+                            padding: 1vh;
+                            font-size: 3vh;
+                        }
+                        .card-stock{
+                            padding: 1vh;
+                            font-size: 3vh;
+                        }
+                    }
+                }
+                .card:hover{
+                    scale: 1.05;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1000px) {
+    .productos{
+        h3{
+            font-size: 14vw;
+        }
+        .busqueda{
+            form{
+                width: 100%;
+                input{
+                    width: 100%;
+                    font-size: 5vw;
+                }
+                button{
+                    width: 20%;
+                    i{
+                        scale: 2.5;
+                    }
+                }
+            }
+        }
+        .productos-categorias{
+            .producto-herramientas,.producto-iluminacion{
+                h2{
+                    font-size: 12vw;
+                }
+                .producto{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .card{
+                        width: 70%;
+                        .card-image{
+                            width: 100%;
+                        }
+                        .card-body{
+                            .card-title{
+                                font-size: 6vw;
+                            }
+                            .card-text{
+                                font-size: 4vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

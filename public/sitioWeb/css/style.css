@@ -60,11 +60,10 @@ header{
                 width: 100%;
                 color: white;
                 background-color: rgba(0, 0, 0, 0);
-                border: solid 2px 0px 2px 0px white;
                     i{
+                    scale: 1;
                     margin: 1vh;
                     padding: 1vh;
-                    scale: 2;
                 }    
             }
         }
@@ -72,115 +71,63 @@ header{
             display: none;
             width: 100%;
             background-color: rgba(0, 0, 0, 0);
-            border-top: solid 2px white;
-            border-left: 0;
-            border-bottom: solid 2px white;
-            border-right: 0;
-        color: white;
+            color: white;
             i{
+                scale: 3;
                 margin: 1vh;
-                padding: 1vh;
-                scale: 2;
+                padding: 3vh;
             }
         }
     }
 }   
 main{
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 100%;
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         padding: 0;
         margin: 0;
-        .inicio,.servicios{
+        .productos{
+            background-color: rgba(255, 255, 255, 0.6);
+            display: flex;
+            flex-direction: column;
             width: 100%;
-        }
-    }
-    .productos{
-        h3{
-            background-color: rgba(255, 255, 255, 0.6);
+            align-items: center;
             text-align: center;
-            font-size: 6vw;
-            margin: 2vw;
-            padding: 1vw;
-        }
-        .producto{
-            display: flex;
-            margin: 1vw;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            .card{
-                width: 30%;
+            h3{
+                width: 50%;
+                margin: 0;
+                font-size: 5vw;
+                padding: 1vw;
                 margin: 1vw;
-                border: solid 5px black;
-                transition: all 0.8s;
-                .card-image{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    margin: 1vw;
-                    img{
-                        width: 50%;
-                    }
-                }
-                .card-body{
-                    .card-title{
-                        font-size: 4vh;
-                    }
-                    .card-text{
-                        font-size: 2vh;
-                    }
-                    .card-price{
-                        font-size: 3vh;
-                    }
-                }
+                
             }
-            .card:hover{
-                scale: 1.05;
+            a{
+                margin: 1vh;
+                width: 30%;
+            text-decoration: none;
+            color: black;
             }
         }
-    }
-    .servicios{
-        h3{
-            background-color: rgba(255, 255, 255, 0.6);
-            font-size: 5vw;
-            text-align: center;
-            padding: 1vw;
-            margin: 2vw 0 2vw 0;
-        }
-        .carrusel{
-            display: none;
-            margin: 5vw;
-            .carousel-inner{
-                img{
-                    height: 80vh;
-                }
-                h5{
-                    color: white;
-                    font-size: 4vw;
-                    margin: 0;
-                    -webkit-text-stroke: 2px black;
-                }
-                p{
-                    color: white;
-                    font-size: 3vw;
-                    margin: 0;
-                    -webkit-text-stroke: 1.4px black;
-                }
+        .servicios{
+            width: 100%;
+            h3{
+                background-color: rgba(255, 255, 255, 0.6);
+                font-size: 5vw;
+                text-align: center;
+                padding: 1vw;
+                margin: 2vw 0 2vw 0;
             }
-        }
-        .serv-ocultos{
-            display: flex;
             .servicios-section{
                 display: flex;
+                width: 100%;
                 flex-wrap: wrap;
                 justify-content: center;
+                align-items: center;
                 .section-serv{
                     width: 30%;
                     display: flex;
@@ -195,112 +142,143 @@ main{
                             background-color: rgb(160, 160, 160);
                             margin: 2vh;
                             padding: 1vh;
-                            width: 30vh;
+                            width: 20vw;
                         }
                     }
                     .section-text{
                         margin: 1vh;
-                        background-color: rgb(160, 160, 160);
+                        background-color: rgb(150, 150, 150);
                         text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
                         h5{
-                            font-size: 4.5vh;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            font-size: 2vw;
                             margin: 1vh;
-                            padding: 1vh;
                         }
                         p{
-                            font-size: 3vh;
-                            margin: 1vh;
-                            padding: 1vh;
+                            justify-content: center;
+                            display: flex;
                             flex-wrap: wrap;
+                            font-size: 1.5vw;
+                            margin: 1vh;
+                            
                         }
-
+                        .contacto{
+                            align-items: center;
+                            justify-content: center;
+                            a{
+                                color: black;
+                                transition: all 0.5s;
+                                i{
+                                    scale: 2;
+                                }
+                            }
+                            a:hover{
+                                color: green;
+                            }
+                        }
                     }
                 }
-                .section-serv:hover{
-                    scale: 1.05;
-                }
             }
         }
-    }
-    .sobre-n{
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.6);
-        h3{
-            background-color: rgb(0, 0, 0, 0);
-            padding: 2vw;
-            font-size: 4vw;
-            text-align: center;
-        }
-        p{
-            text-align: center;
-            font-size: 1.8vw;
-            margin: 2vw;
-            margin-bottom: 0;
-        }
-        div{
+        .sobre-n{
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             width: 100%;
-            img{
-                background-color: white;
-                margin: 2vh;
-                width: 80%;
-                transition: all 0.8s;
+            background-color: rgba(255, 255, 255, 0.6);
+            h3{
+                background-color: rgb(0, 0, 0, 0);
+                padding: 2vw;
+                margin: 0;
+                font-size: 8vh;
+                text-align: center;
             }
+            p{
+                text-align: center;
+                font-size: 3.5vh;
+                margin: 2vw;
+                margin-bottom: 0;
+            }
+            div{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                img{
+                    background-color: white;
+                    margin: 2vh;
+                    width: 80%;
+                    transition: all 0.8s;
+                }
                 img:hover{
                     scale: 1.05;
+                }
             }
         }
+        .mv{
+            background-color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            display: flex;
+            width: 100%;
+            .mision{
+                width: 50%;
+                margin: 2vw;
+                h3{
+                    background-color: rgb(0, 0, 0, 0);
+                    font-size: 8vh;
+                    margin: 1vw;
+                }
+                p{
+                    font-size: 3.5vh;
+                    margin: 1vw;
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    img{
+                        margin: 2vw;
+                        width: 20vw;
+                        transition: all 0.8s;
+                    }
+                    img:hover{
+                        scale: 1.05;
+                    }
+                }
+            }
+            .vision{
+                width: 50%;
+                margin: 2vw;
+                h3{
+                    background-color: rgb(0, 0, 0, 0);
+                    font-size: 8vh;
+                    margin: 1vw;
+                }
+                p{
+                    font-size: 3.5vh;
+                    margin: 1vw;
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    img{
+                        margin: 2vw;
+                        width: 20vw;
+                        transition: all 0.8s;
+                    }
+                    img:hover{
+                        scale: 1.05;
+                    }
+                }
+            }
+        }    
     }
-    .mv{
-        background-color: rgba(255, 255, 255, 0.6);
-        text-align: center;
-        display: flex;
-        .mision{
-            margin: 2vw;
-            h3{
-                background-color: rgb(0, 0, 0, 0);
-                font-size: 5vw;
-                margin: 1vw;
-            }
-            p{
-                font-size: 1.8vw;
-                margin: 1vw;
-            }
-            div{
-                img{
-                    margin: 2vw;
-                    width: 20vw;
-                    transition: all 0.8s;
-                }
-                img:hover{
-                    scale: 1.05;
-                }
-            }
-        }
-        .vision{
-            margin: 2vw;
-            h3{
-                background-color: rgb(0, 0, 0, 0);
-                font-size: 5vw;
-                margin: 1vw;
-            }
-            p{
-                font-size: 1.8vw;
-                margin: 1vw;
-            }
-            div{
-                img{
-                    margin: 2vw;
-                    width: 20vw;
-                    transition: all 0.8s;
-                }
-                img:hover{
-                    scale: 1.05;
-                }
-            }
-        }
-    }    
 }
 footer{
     background-color: black;
@@ -310,6 +288,7 @@ footer{
         justify-content: space-evenly;
         .contactos{
             h3{
+                font-size: 5vh;
                 margin: 2vw;
             }
             .info-contactos{
@@ -317,7 +296,8 @@ footer{
                 flex-direction: column;
                 .contacto{
                     h3{
-                        margin: 1vw;
+                        font-size: 5vh;
+                        margin: 1vh;
                     }
                     div{
                         display: flex;
@@ -326,8 +306,8 @@ footer{
                         .numero{
                             display: flex;
                             p{
-                                margin: 1vw;
-                                font-size: 1.3vw;
+                                margin: 1vh;
+                                font-size: 3vh;
                                 a{
                                     text-decoration: none;
                                     color: rgb(194, 194, 194);
@@ -358,15 +338,16 @@ footer{
                 }
                 .correo{
                     h3{
-                        margin: 1vw;
+                        font-size: 5vh;
+                        margin: 1vh;
                     }
                     div{
                         display: flex;
                         align-items: center;
                         justify-content: start;
                         p{
-                            margin: 1vw;
-                            font-size: 1.3vw;
+                            margin: 1vh;
+                            font-size: 3vh;
                             a{
                                 text-decoration: none;
                                 color: rgb(194, 194, 194);
@@ -382,7 +363,8 @@ footer{
                 }
                 .direccion{
                     h3{
-                        margin: 1vw;                   
+                        font-size: 5vh;
+                        margin: 1vh;                   
                     }
                     div{
                         display: flex;
@@ -390,8 +372,8 @@ footer{
                         justify-content: space-evenly;
                         p{
                             flex-wrap: wrap;
-                            margin: 1vw;
-                            font-size: 1.3vw;
+                            margin: 1vh;
+                            font-size: 3vh;
                         }
                         i{
                             scale: 1.5;
@@ -417,34 +399,6 @@ footer{
                 display: flex;
                 justify-content: center;
             }
-            .login{
-                bottom: 3vh;
-                right: 3vh;
-                position: fixed;
-                display: flex;
-                a{
-                    width: 60px;
-                    height: 60px;
-                    border-radius: 50%;
-                    color: blue;
-                    border: solid 3px gray;
-                    background-color: white;
-                    transition: all 0.5s;
-                    transition: opacity 0.5s ease-in-out;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-decoration: none;
-                    i{
-                        scale: 2;
-                        padding: 1vh;
-                        margin: 0;
-                    }
-                }
-                a:hover{
-                    scale: 1.2;
-                }
-            }
         }
     }
     .derechos{
@@ -458,7 +412,7 @@ footer{
         padding: 1px;
     }
 }
-@media (max-width:1200px) {
+@media (max-width:1300px) {
     header{
         display: flex;
         justify-content: center;
@@ -496,75 +450,59 @@ footer{
         }
     }
     main{
-        .productos{
-            text-align: center;
-            h3{
-                font-size: 6vh;
-                flex-wrap: wrap;
-            }
-            .producto{
-                align-items: center;
-                flex-direction: column;
-                .card{
-                    width: 50%;
-                }
-            }
-        }
-        .servicios{
-            h3{
-                font-size: 7vh;
-            }
-            .carrusel{
-                margin: 0;
-                .carousel-inner{
-                    img{
-                        height: 100%;
-                    }
-                    h5{
+        .container{
+            .productos{
+                text-align: center;
+                    h3{
                         font-size: 6vh;
+                        flex-wrap: wrap;
                     }
-                    p{
-                        font-size: 4.5vh;
+                }
+            .servicios{
+                h3{
+                font-size: 7vh;
+                margin: 0;
+                }
+                .servicios-section{
+                    .section-serv{
+                        width: 45%;       
+                        .section-image{
+                            img{
+                                width: 30vw;
+                            }
+                        } 
                     }
                 }
             }
-        }
-        .sobre-n{
-            h3{
-                font-size: 7vh;
-            }
-            p{
-                font-size: 3vh;
-                flex-wrap: wrap;
-            }
-        }
-        .mv{
-            flex-direction: column;
-            .mision, .vision{
+            .sobre-n{
                 h3{
-                    font-size: 7vh;
+                    font-size: 10vw;
                 }
                 p{
                     font-size: 3vh;
                     flex-wrap: wrap;
                 }
-                div{
-                    img{
-                        width: 40vh;
+            }
+            .mv{
+                flex-direction: column;
+                align-items: center;
+                .mision, .vision{
+                    width: 90%;
+                    h3{
+                        font-size: 7vh;
+                    }
+                    p{
+                        font-size: 3vh;
+                        flex-wrap: wrap;
+                    }
+                    div{
+                        img{
+                            width: 40vh;
+                        }
                     }
                 }
             }
         }
-    }
-    /*CLASES QUE SE AGREGARAN CON JS*/
-    .ocultar{
-        display: none;
-    }
-
-    .visible{
-        display: block;
-        opacity: 1;
-        visibility: visible;
     }
     footer{
         .info-footer{
@@ -646,8 +584,57 @@ footer{
             }
         }
     }
+    /*CLASES QUE SE AGREGARAN CON JS*/
+    .ocultar{
+        display: none;
+    }
+
+    .visible{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
 }
 @media (max-width:830px) {
+    header{
+        nav{
+            ul{
+                .BtnCerrar{
+                    i{
+                        scale: 1.5;    
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .container{
+            .servicios{
+                width: 100%;
+                .servicios-section{
+                    display: flex;
+                    flex-direction: column;
+                    .section-serv{
+                        width: 90%;
+                        .section-image{
+                            img{
+                                width: 40vh;
+                            }
+                        }
+                        .section-text{
+                            h5{
+                                font-size: 6vw;
+                            }
+                            p{
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     footer{
         .info-footer{
             .contactos{
@@ -696,30 +683,51 @@ footer{
                     width: 50vw;
                 }
             }
+            ul{
+            .BtnCerrar{
+                i{
+                    margin: 1vh;
+                    padding: 3vh;
+                    scale: 3;
+                }
+            }
+            }
         }
     }
     main{
-        .servicios{
-            .serv-ocultos{
+        .container{
+            .servicios{
                 width: 100%;
                 .servicios-section{
-                    display: flex;
-                    flex-direction: column;
                     .section-serv{
-                        width: 90%;
-                        .section-image{
-                            img{
-                                width: 40vh;
+                        margin: 1vh 0vh 1vh 0vh;
+                        justify-content: center;
+                        width: 100%;
+                        align-items: center;
+                        .section-text{
+                            h5{
+                                font-size: 8vw;
+                            }
+                            p{
+                                font-size: 5vw;
+                            }
+                            .contacto{
+                                a{
+                                    i{
+                                        scale: 1.5;
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-        .productos{
-            .producto{
-                .card{
-                    width: 80%;
+            .mv{
+                .mision{
+                    width: 100%;
+                }
+                .vision{
+                    width: 100%;
                 }
             }
         }

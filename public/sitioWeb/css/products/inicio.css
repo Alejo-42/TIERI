@@ -1,0 +1,15 @@
+.categorias{
+    ul{
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 2rem;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

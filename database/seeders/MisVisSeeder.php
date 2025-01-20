@@ -17,7 +17,7 @@ class MisVisSeeder extends Seeder
         for ($i=0; $i <3 ; $i++) { 
             MisVis::create([
                 'name' =>'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magni alias quisquam nostrum modi pariatur repellat hic eligendi consequatur quae corporis dignissimos, nam incidunt laborum eius, et aspernatur ipsam fugit?',
-                'image' =>'img.png',
+                'image' =>'20250116162144.png',
                 'status'=>'activo'
             ]);
         }
